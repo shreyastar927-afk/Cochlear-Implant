@@ -7,7 +7,9 @@ A fully-modular Python implementation of a cochlear implant (CI) speech encoding
 Project Overview
 Standard cochlear implants have 12–22 physical electrodes. Current steering (virtual channels) creates additional pitch percepts by simultaneously stimulating two adjacent electrodes at complementary current ratios. This simulator implements the full pipeline from raw audio → biphasic pulse schedule.
 
-Pipeline Architecture:
+### Pipeline Architecture
+
+```
 Raw Audio
    │
    ▼
@@ -42,6 +44,7 @@ Raw Audio
 ┌─────────────────────────────────┐
 │  Stage 6 · visualization.py     │  8 analysis plots + dashboard
 └─────────────────────────────────┘
+```
 ## Modules
 
 | Module | Stage | Responsibility |
